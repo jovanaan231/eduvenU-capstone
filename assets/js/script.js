@@ -1,29 +1,82 @@
-// change navbar style on scroll
-
+//changes the header background color on scroll
 window.addEventListener("scroll", () => {
   document
-    .querySelector("nav")
+    .querySelector("header")
     .classList.toggle("window-scroll", window.scrollY > 0);
 });
 
-/// toggle bar js
+let menuBtn = document.querySelector("#menu-btn");
+let navbar = document.querySelector(".header .flex .navbar");
 
-const menu = document.querySelector(".nav_menu");
-const menuBtn = document.querySelector("#open-menu-btn");
-const closeBtn = document.querySelector("#close-menu-btn");
-
-menuBtn.addEventListener("click", () => {
-  menu.style.display = "flex";
-  closeBtn.style.display = "inline-block";
-  menuBtn.style.display = "none";
-});
-
-//close nav menu
-
-const closeNav = () => {
-  menu.style.display = "none";
-  closeBtn.style.display = "none";
-  menuBtn.style.display = "inline-block";
+menuBtn.onclick = () => {
+  menuBtn.classList.toggle("fa-times");
+  navbar.classList.toggle("active");
 };
 
-closeBtn.addEventListener("click", closeNav);
+window.onscroll = () => {
+  menuBtn.classList.remove("fa-times");
+  navbar.classList.remove("active");
+};
+
+var swiper = new Swiper(".course-slider", {
+  spaceBetween: 20,
+  grabCursor: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    540: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+var swiper = new Swiper(".ourteam-slider", {
+  spaceBetween: 20,
+  grabCursor: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    540: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+// var swiper = new Swiper(".reviews-slider", {
+//   spaceBetween: 20,
+//   grabCursor: true,
+//   loop: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   breakpoints: {
+//     540: {
+//       slidesPerView: 1,
+//     },
+//     768: {
+//       slidesPerView: 2,
+//     },
+//     1024: {
+//       slidesPerView: 3,
+//     },
+//   },
+// });

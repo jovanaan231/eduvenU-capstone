@@ -4,54 +4,106 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EduvenU | Home</title>
+    <title>EduvenU</title>
     <link rel="shortcut icon" href="/assets/img/eduvenU.png" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- swiper css link  -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <script
-      src="https://kit.fontawesome.com/4c828e3925.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
-  <body id="background">
-    <!-- Navbar -->
-    <nav>
-      <div class="container nav_container">
-        <a
-          class="navbar-brand nav-link active"
-          aria-current="page"
-          href="index.html"
-          ><img src="./assets/img/logo.png" alt="EduvenU" height="100"
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <section class="flex">
+        <a href="index.html" class="logo"
+          ><img
+            src="./assets/img/logo.png"
+            alt="EduvenU"
+            width="150px"
+            height="80px"
         /></a>
-        <ul class="nav_menu">
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="ourteam.html">Our Team</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
-        <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+
+        <nav class="navbar">
+          <a href="about.html">About</a>
+          <a href="courses.html">Courses</a>
+          <a href="ourteam.html">Our team</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </section>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- About Section -->
+    <div class="Section">
+      <h1 class="heading">About <span>Us</span></h1>
+      <div class="service">
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h2>Learn How to Code</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+          </div>
+          <h2>Display your Work</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <h2>Team Work</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+        </div>
       </div>
-    </nav>
-    <!-- /Navbar -->
+    </div>
 
-    <!-- Main Content -->
-    <section>About content...</section>
-    <!-- /Main Content -->
+    <!-- footer section starts  -->
 
-    <!-- Footer -->
-    <footer>Footer Here ....</footer>
-    <!-- Footer -->
+    <footer class="footer">
+      <section>
+        <!-- <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-youtube"></a>
+        </div> -->
+        <div class="credit">&copy; 2023 by EduvenU. All rights reserved.</div>
+      </section>
+    </footer>
 
-    <script src="./assets/js/script.js"></script>
+    <!-- footer section ends -->
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
